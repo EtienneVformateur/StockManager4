@@ -21,12 +21,16 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(view)
 
         auth = Firebase.auth
-
+        val intent = Intent(this, LoginPage::class.java)
         val registeremail = findViewById<EditText>(R.id.ETregisteremail)
         val registerpwd = findViewById<EditText>(R.id.ETregisterpwd1)
         val registerpwdconf = findViewById<EditText>(R.id.ETregisterpwd2)
         val signinbutton = findViewById<Button>(R.id.BTsignup)
+        val backtologin = findViewById<Button>(R.id.BTloginpage)
 
+        backtologin.setOnClickListener {
+            startActivity(intent)
+        }
         signinbutton.setOnClickListener {
             val email = registeremail.text.toString()
             val password = registerpwd.text.toString()
@@ -48,7 +52,6 @@ class RegisterActivity : AppCompatActivity() {
                                     Toast.LENGTH_SHORT).show()
                             }
                         }
-                        val intent = Intent(this, LoginPage::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(baseContext, "Sign In Failed", Toast.LENGTH_SHORT).show()

@@ -17,8 +17,8 @@
         android:textSize="34sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/TVemaillogin"
+    <EditText
+        android:id="@+id/BTemaillogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="mail address here"
@@ -26,8 +26,8 @@
         android:textSize="48sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/TVpwdlogin"
+    <EditText
+        android:id="@+id/BTpwdlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="password here"
@@ -52,4 +52,10 @@
         android:textAlignment="center"
         android:textSize="48sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/BTforgotpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password Forgotten" />
 </LinearLayout>
