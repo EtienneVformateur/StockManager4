@@ -14,9 +14,10 @@
         android:layout_height="wrap_content"
         android:hint="email here"
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/ETregisterpwd1"
@@ -24,9 +25,10 @@
         android:layout_height="wrap_content"
         android:hint="pwd here"
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/ETregisterpwd2"
@@ -34,9 +36,10 @@
         android:layout_height="wrap_content"
         android:hint="confirm pwd here"
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
 
     <Button
         android:id="@+id/BTsignup"

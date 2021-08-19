@@ -9,6 +9,15 @@
     tools:context=".LoginPage">
 
     <TextView
+        android:id="@+id/TVstatusconnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/TVemaillogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
