@@ -29,6 +29,14 @@ class LoginPage : AppCompatActivity() {
         val loginpwd = findViewById<EditText>(R.id.BTpwdlogin)
         val loginbutton = findViewById<Button>(R.id.BTlogin)
 
+        loginbutton.alpha = 0f
+        loginbutton.translationY = 50F
+        loginbutton.animate().alpha(1f).translationYBy(-50F).duration = 1500
+
+        resetpwd.alpha = 0f
+        resetpwd.translationY = 50F
+        resetpwd.animate().alpha(1f).translationYBy(-50F).duration = 1500
+
         resetpwd.setOnClickListener {
             val intent = Intent(this, PwdForgotten::class.java)
             startActivity(intent)
