@@ -13,7 +13,7 @@
             android:name=".PwdForgotten"
             android:exported="true" />
         <activity
-            android:name=".OrderingSheet"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".RegisterActivity"
@@ -22,7 +22,7 @@
             android:name=".LoginPage"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".OrderingSheet"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

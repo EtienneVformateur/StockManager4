@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Developpement/projetflutter/StockManager4/app/src/main/res/layout/activity_ordering_sheet.xml" value="0.14665996986438976" />
+        <entry key="..\:/Developpement/projetflutter/StockManager4/app/src/main/res/layout/item_book.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/buttonstyle.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.1766304347826087" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1766304347826087" />
