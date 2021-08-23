@@ -28,14 +28,15 @@ class LoginPage : AppCompatActivity() {
         val loginmail = findViewById<EditText>(R.id.BTemaillogin)
         val loginpwd = findViewById<EditText>(R.id.BTpwdlogin)
         val loginbutton = findViewById<Button>(R.id.BTlogin)
+        val register = findViewById<Button>(R.id.BTregister)
 
         loginbutton.alpha = 0f
         loginbutton.translationY = 50F
         loginbutton.animate().alpha(1f).translationYBy(-50F).duration = 1500
 
-        resetpwd.alpha = 0f
-        resetpwd.translationY = 50F
-        resetpwd.animate().alpha(1f).translationYBy(-50F).duration = 1500
+        register.alpha = 0f
+        register.translationY = 50F
+        register.animate().alpha(1f).translationYBy(-50F).duration = 1500
 
         resetpwd.setOnClickListener {
             val intent = Intent(this, PwdForgotten::class.java)
@@ -58,7 +59,7 @@ class LoginPage : AppCompatActivity() {
                 }
         }
 
-        val register = findViewById<Button>(R.id.BTregister)
+
         register.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)

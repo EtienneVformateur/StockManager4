@@ -12,19 +12,42 @@
         android:id="@+id/ETforgotmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:ignore="HardcodedText,TouchTargetSizeCheck"
-        android:importantForAutofill="no" />
+        android:hint="@string/emailforgot"
+        android:importantForAutofill="no"
+        android:inputType="textWebEmailAddress"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/BTresetpwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset PWD" />
+        android:text="@string/pwdreset"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="TextContrastCheck"
+        android:background="@drawable/buttonstyle"
+        android:focusable="true"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="15dp"/>
 
     <Button
         android:id="@+id/BTreturnlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Login" />
+        android:text="@string/backtologin"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="TextContrastCheck"
+        android:background="@drawable/buttonstyle"
+        android:focusable="true"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="15dp"/>
 </LinearLayout>

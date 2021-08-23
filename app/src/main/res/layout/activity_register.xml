@@ -12,44 +12,68 @@
         android:id="@+id/ETregisteremail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="email here"
+        android:hint="@string/emailforgot"
+        android:importantForAutofill="no"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:importantForAutofill="no"
-        tools:ignore="TextFields" />
+        tools:ignore="TextFields,TextContrastCheck" />
 
     <EditText
         android:id="@+id/ETregisterpwd1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="pwd here"
+        android:hint="@string/pwdlogin"
+        android:importantForAutofill="no"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:importantForAutofill="no"
-        tools:ignore="TextFields" />
+        tools:ignore="TextFields,TextContrastCheck" />
 
     <EditText
         android:id="@+id/ETregisterpwd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="confirm pwd here"
+        android:hint="@string/confirmpwd"
+        android:importantForAutofill="no"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:importantForAutofill="no"
-        tools:ignore="TextFields" />
+        tools:ignore="TextFields,TextContrastCheck" />
 
     <Button
         android:id="@+id/BTsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up" />
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonstyle"
+        android:focusable="true"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp"
+        android:text="@string/register2"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/BTloginpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN" />
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonstyle"
+        android:focusable="true"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="TextContrastCheck" />
 </LinearLayout>

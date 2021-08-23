@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">StockManager4</string>
+    <string name="status">TEST</string>
+    <string name="login">LOGIN</string>
+    <string name="backtologin">BACK TO LOGIN</string>
+    <string name="register">SIGN IN</string>
+    <string name="register2">SIGN UP</string>
+    <string name="emaillogin">mail address here</string>
+    <string name="pwdlogin">password here</string>
+    <string name="pwdreset">Reset Password</string>
+    <string name="confirmpwd">Confirm your Password</string>
+    <string name="emailforgot">Enter your email address here</string>
+    <string name="pwdforgot">PASSWORD FORGOTTEN</string>
+    <string name="start">START</string>
 </resources>

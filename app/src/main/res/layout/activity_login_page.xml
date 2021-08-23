@@ -12,7 +12,7 @@
         android:id="@+id/TVstatusconnexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TEST"
+        android:text="@string/status"
         android:textAlignment="center"
         android:textSize="28sp"
         android:textStyle="bold" />
@@ -21,55 +21,61 @@
         android:id="@+id/BTemaillogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="mail address here"
+        android:hint="@string/emaillogin"
+        android:importantForAutofill="no"
+        android:inputType="textWebEmailAddress"
         android:textAlignment="center"
         android:textSize="28sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/BTpwdlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="password here"
+        android:hint="@string/pwdlogin"
+        android:importantForAutofill="no"
+        android:inputType="textLongMessage|textVisiblePassword|textWebEditText|text|textPassword|numberDecimal"
         android:textAlignment="center"
         android:textSize="28sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/BTlogin"
-        android:text="LOGIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/buttonstyle"
         android:focusable="true"
         android:paddingStart="25dp"
         android:paddingTop="15dp"
         android:paddingEnd="25dp"
         android:paddingBottom="15dp"
+        android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:ignore="TextContrastCheck"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"/>
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/BTregister"
-        android:text="Sign In"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/buttonstyle"
         android:focusable="true"
         android:paddingStart="25dp"
         android:paddingTop="15dp"
         android:paddingEnd="25dp"
         android:paddingBottom="15dp"
+        android:text="@string/register"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:ignore="TextContrastCheck"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"/>
+        tools:ignore="TextContrastCheck" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="200dp"
@@ -83,8 +89,8 @@
         android:id="@+id/BTforgotpwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#00FFFFFF"
-        android:text="Password Forgotten"
-        android:textColor="#673AB7"
-        android:layout_marginBottom="10dp"/>
+        android:text="@string/pwdforgot"
+        android:textColor="#673AB7" />
 </LinearLayout>

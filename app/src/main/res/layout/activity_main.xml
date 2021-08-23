@@ -18,9 +18,9 @@
         android:paddingTop="15dp"
         android:paddingEnd="25dp"
         android:paddingBottom="15dp"
+        android:text="@string/start"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:ignore="TextContrastCheck"
-        android:text="START" />
+        tools:ignore="TextContrastCheck" />
 </LinearLayout>
