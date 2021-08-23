@@ -1,6 +1,5 @@
 package com.example.stockmanager4
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -65,15 +64,15 @@ class LoginPage : AppCompatActivity() {
             startActivity(intent)
         }
     }
-    @SuppressLint("SetTextI18n")
+
     public override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
         val status = findViewById<TextView>(R.id.TVstatusconnexion)
         if(currentUser != null){
-            status.text = "ONLINE"
+            status.text = "Online"
         }else {
-            status.text = "OFFLINE"
+            status.text = "Offline"
         }
     }
 }

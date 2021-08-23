@@ -39,7 +39,7 @@ class RegisterActivity : AppCompatActivity() {
             if (password != password2) {
                 Toast.makeText(baseContext, "Passwords aren't identical", Toast.LENGTH_SHORT).show()
             } else if (password < 6.toString()) {
-                Toast.makeText(baseContext, "Minimum 6 Characters", Toast.LENGTH_SHORT).show()
+                Toast.makeText(baseContext, "Min 6 Characters Please", Toast.LENGTH_SHORT).show()
             } else {
                 auth.createUserWithEmailAndPassword(email,
                     password).addOnCompleteListener(this) { task ->
@@ -54,7 +54,7 @@ class RegisterActivity : AppCompatActivity() {
                         }
                         startActivity(intent)
                     } else {
-                        Toast.makeText(baseContext, "Sign In Failed", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(baseContext, "Sign Up Failed", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
